@@ -1,0 +1,25 @@
+tests:
+  - name: test 1
+    stdin: "0"
+    stdout:
+      - contains: "Number of seconds:"
+  - name: test 2
+    stdin: "3600"
+    stdout:
+      - contains: "01:00:00"
+  - name: test 3
+    stdin: "86400"
+    stdout:
+      - contains: "OVERFLOW"
+  - name: test 4
+    stdin: "-1"
+    stdout:
+      - contains: "ERROR"
+  - name: test 5
+    stdin: "3661"
+    stdout:
+      - contains: "01:01:01"
+  - name: test 6
+    stdin: "86399"
+    stdout:
+      - contains: "23:59:59"
