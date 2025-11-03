@@ -16,6 +16,7 @@
     "terminal.integrated.shellIntegration.decorationsEnabled": true,
     "files.associations": {
         "stdio.h": "c",
-        "stdbool.h": "c"
+        "stdbool.h": "c",
+        "math.h": "c"
     },
 }
